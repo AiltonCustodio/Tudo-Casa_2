@@ -1,0 +1,296 @@
+/* Reset Geral */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, sans-serif;
+}
+
+span {
+    color: red;
+}
+
+#container {
+    background-color: rgb(251, 251, 251);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* TOPO */
+#topo {
+    position: relative;
+    /* border: 3px solid red; */
+    width: 100%;
+    height: 170px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+#topo-fundo img {
+    width: 100%;
+    height: 170px;
+}
+
+#topo-navbar {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+}
+
+#navbar-itens {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 15px;
+}
+
+#navbar-itens img {
+    height: 9rem;
+    width: auto;
+}
+
+#navbar-itens #navbar-titulo {
+    color: aliceblue;
+    font-weight: bolder;
+    text-align: center;
+}
+
+#navbar-itens #navbar-titulo,
+h1 {
+    margin-bottom: 1rem;
+    text-shadow: 1px 1px 1.5px rgba(0, 0, 0, 0.5);
+}
+
+#navbar-menu #menu-itens a {
+    text-decoration: none;
+    padding: 15px 20px;
+    background-color:#0199d1 ;
+    font-weight: bold;
+    color: chartreuse;
+    margin-right: .2px;
+    transition: 1ms;
+    border-radius: 5px;
+}
+
+#navbar-menu #menu-itens a:hover {
+    color: rgb(250, 252, 247);
+    background-color:#00b5ea;
+}
+
+
+/* Corpo / Form */
+#corpo {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    background-color: rgb(251, 251, 225);
+    width: 50%;
+    margin-left: 23%;
+    position: absolute;
+    top: 130px;
+    box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+#corpo #container-form {
+    padding: 0 3rem;
+}
+
+#corpo #container-form input[type="submit"] {
+    background-color:#0199d1 ;
+    font-weight: bold;
+    color: chartreuse;
+    margin: 1rem 45%;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+}
+
+#corpo #container-form input[type="submit"]:hover {
+    color: rgb(250, 252, 247);
+    background-color:#00b5ea;
+
+}
+
+#corpo #container-form #enunciado-form {
+    padding-bottom: 1rem;
+    font-weight: bold;
+    font-style: italic;
+    ;
+}
+
+#corpo #container-form #topo-form {
+    color: #0085bc;
+    font-weight: bold;
+    text-shadow: 1px 1px 1.5px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    margin: 1rem 0;
+}
+
+#formulario {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#formulario .box-input,
+.option-box {
+    border-bottom: 1px solid rgba(141, 137, 137, 0.5);
+    max-width: 70%;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+#formulario select,
+.box-input input {
+    margin-top: .5rem;
+    display: block;
+    width: 70%;
+    height: 1.5rem;
+}
+
+textarea {
+    height: 5rem;
+    width: 100%;
+    margin-top: .5rem;
+}
+
+fieldset {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 15px;
+}
+
+.option-box p {
+    margin: .5rem 0;
+}
+
+.optional-box .optional-list li {
+    list-style-type: none;
+}
+
+
+
+/* Rodapé */
+
+#rodape {
+    /* border: 3px solid rgb(57, 196, 7); */
+    width: 100%;
+    text-align: center;
+    margin-top: 100%;
+    border-top: 1px solid rgb(185, 185, 184);
+    background-color: rgb(251, 251, 225);
+}
+
+#rodape p {
+    margin-top: 10px;
+}
+
+/* Responsividade */
+
+@media screen and (max-width:425px) {
+
+    /* Topo */
+    #navbar-itens {
+        margin: 2px 0;
+    }
+
+    #navbar-itens img {
+        height: 4rem;
+        width: auto;
+    }
+
+    #navbar-titulo {
+        color: aliceblue;
+        font-weight: bold;
+        text-align: center;
+        width: 100%;
+        margin: 10px 20px;
+
+    }
+
+    #navbar-itens #navbar-titulo h1 {
+        font-size: 1rem;
+        margin: .5rem;
+    }
+
+
+    #navbar-itens #navbar-titulo h3 {
+        font-size: .7rem;
+        margin: .5rem 0;
+    }
+
+    #navbar-menu {
+        text-align: right;
+    }
+
+    #navbar-menu #menu-itens a {
+        font-size: 1rem;
+        margin: 15px;
+    }
+
+
+    /* Corpo / Form */
+
+    #corpo #container-form {
+        padding: .5rem;
+    }
+
+    #corpo #container-form #topo-form {
+        font-size: 12px;
+    }
+
+    #corpo #container-form #enunciado-form {
+        font-size: 10px;
+        text-align: center;
+    }
+
+    #formulario label {
+        font-size: 15px;
+    }
+
+    #formulario .box-input,
+    .option-box {
+    max-width: 100%;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+#formulario select,
+.box-input input {
+    margin: .5rem 0;
+    display: block;
+    width: 98%;
+}
+
+fieldset {
+    display: block;
+    width: 95%;
+    padding: 10px 5px;
+}
+
+
+#corpo #container-form input[type="submit"] {
+    background-color: #0085bc;
+    color: chartreuse;
+    font-weight: bold;
+    margin: .5rem 30%;
+    padding: .5rem 1rem;
+    border: 1px solid gray;
+}
+
+/* Rodapé */
+
+#rodape {
+    position: relative;
+    top: 950px;
+}
+
+#rodape p {
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+}

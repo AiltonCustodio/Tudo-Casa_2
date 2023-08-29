@@ -1,0 +1,53 @@
+/* Reset Geral */
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, sans-serif;
+}
+
+#container{
+    background-color: rgb(241, 238, 206);    
+}
+
+/* TOPO */
+#topo{
+    position: relative;
+    border: 3px solid red;
+    height: 170px;   
+}
+#topo-fundo img{
+    width: 100%;
+    height: 170px;
+}
+#topo-navbar{
+    position: absolute;
+    top: 15px;
+    width: 95%;
+}
+#navbar-itens{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+} 
+#navbar-itens img{
+    height: 9rem;
+    width: auto;
+}
+
+
+/* Corpo / Form */
+#corpo{
+    position: absolute;
+    border: 3px solid rgb(45, 210, 182);
+    background-color: rgb(251, 251, 225);
+    width: 60%;
+    left: 25%;
+    top: 140px;
+}
+
+
+/* Rodapé */
+
+#rodape{
+    border: 3px solid rgb(57, 196, 7);
+}

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tudo-CASA v2.0</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div id="container">
+        <header id="topo">
+            <div id="topo-fundo">
+                <img src="img/banner-2.jpg" alt="fundo_navbar">
+            </div>
+            <nav id="topo-navbar">
+                <div id="navbar-itens">
+                    <img src="img/house-g4aae1a8b2_1280.png" alt="">
+                    <div id="navbar-titulo">
+                        <h1>TUDO CASA - VENDA - COMPRE - ALUGUE</h1>
+                        <h3>Sem Dor de Cabeça</h3>
+                    </div>
+                    <div id="navbar-menu">
+                        <ul id="menu-itens">
+                            <a href="#">Home</a>
+                            <a href="#">Serviços</a>
+                            <a href="#">Contatos</a>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main id="corpo">
+            <div id="container-form">
+                <div id="topo-form">
+                    <h2>Formulário de Cadastro</h2>
+                </div id="corpo-form">
+                <p id="enunciado-form">
+                    Descreva as Características do Seu Imóvel:
+                </p>
+                <form id="formulario">
+                    <div class="box-input">
+                        <label for="title">Título do Anuncio <span class="required-field">*</span></label>
+                        <input type="text" name="title" id="title" class="block"
+                            placeholder="Um título para anunciar seu imovel." minlength="1" maxlength="30" required>
+                    </div>
+                    <div class="box-input">
+                        <label for="finalidade">Finalidade:<span class="required-field">*</span></label>
+                        <select name="finalidade" class="block">
+                            <option value="">Selecione uma opção</option>
+                            <option value="Aluguel">Aluguel</option>
+                            <option value="Compra">Compra</option>
+                            <option value="Venda">Venda</option>
+                        </select>
+                    </div>
+                    <div class="box-input">
+                        <label for="price">Preço:<span class="required-field">*</span></label>
+                        <input type="number" name="price" id="title" class="block" placeholder="Defina o preço."
+                            required>
+                    </div>
+                    <div class="box-input">
+                        <label for="description">Descrição: <span class="required-field">*</span></label>
+                        <textarea name="description" id="description" class="block"
+                            placeholder="Aqui voce descreve os detelhes do imóvel, por exemplo: se ele tem alguma pendência tributária."></textarea>
+                    </div>
+                    <div class="box-input">
+                        <label for="endereco">Endereço: <span class="required-field">*</span></label>
+                        <input type="text" name="endereco" id="endereco" class="block"
+                            placeholder="Digite o endereço do imóvel." required>
+                    </div>
+                    <div class="box-input">
+                        <label for="Cidade">Cidade: <span class="required-field">*</span></label>
+                        <input type="text" name="cidade" id="cidade" class="block" placeholder="Digite a cidade."
+                            required>
+                    </div>
+                    <div class="box-input">
+                        <label for="cep">CEP.: <span class="required-field">*</span></label>
+                        <input type="number" name="cep" id="cep" class="block" placeholder="Digite o CEP." required>
+                    </div>
+                    <div class="box-input">
+                        <label for="uf">UF: <span class="required-field">*</span></label>
+                        <input type="text" name="uf" list="uf" maxlength="2" minlength="2" class="list-uf"
+                            placeholder="Estado">
+                        <datalist id="uf">
+                            <option value="AC"></option>
+                            <option value="AL"></option>
+                            <option value="BA"></option>
+                            <option value="CE"></option>
+                            <option value="ES"></option>
+                        </datalist>
+                    </div>
+                    <div class="option-box">
+                        <p>Aceita Financiamento?<span class="required-field">*</span></p>
+                        <input type="radio" name="financ" id="sim">
+                        <label for="sim">SIM</label>
+                        <input type="radio" name="financ" id="nao">
+                        <label for="nao">NÃO</label>
+                    </div>
+                    <div class="option-box">
+                        <fieldset>
+                            <legend>Opcionais:</legend>
+                            <div class="optional-box">
+                                <p>Quartos</p>
+                                <ul class="optional-list">
+                                    <li>
+                                        <input type="checkbox" value="02" name="optional[]">
+                                        <label for="check">2-Dois</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" value="03" name="optional[]">
+                                        <label for="check">3-Três</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" value="04" name="optional[]">
+                                        <label for="check">4-Quatro</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" value="mais" name="optional[]">
+                                        <label for="check">Mais ...</label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="optional-box">
+                                <p>Banheiros</p>
+                                <ul class="optional-list">
+                                    <li>
+                                        <input type="checkbox" value="01" name="optional[]">
+                                        <label for="check">01-Um</label><br>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" value="02" name="optional[]">
+                                        <label for="check">02-Dois</label><br>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" value="03" name="optional[]">
+                                        <label for="check">03-Três</label>
+                                    </li>
+                                    <input type="checkbox" value="mais" name="optional[]">
+                                    <label for="check">Mais...</label>
+                                </ul>
+                            </div>
+                            <div class="optional-box">
+                                <p>Vagas</p>
+                                <ul class="optional-list">
+                                    <li>
+                                        <input type="checkbox" value="00" name="optional[]">
+                                        <label for="check">Sem Garagem</label><br>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" value="01" name="optional[]">
+                                        <label for="check">01-Vaga</label><br>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" value="02" name="optional[]">
+                                        <label for="check">02-Vagas</label>
+                                    </li>
+                                    <input type="checkbox" value="varias" name="optional[]">
+                                    <label for="check">Livre</label>
+                                </ul>
+                            </div>
+                        </fieldset>
+                    </div>
+
+                    <div class="box-input">
+                        <p>Fotos do Imovel: <span class="required-field">*</span></p>
+                        <input type="file" name="images" id="images" multiple accept="image/png, image/jpg" required>
+                    </div>
+                    <input type="submit" value="Enviar" class="btn-submit">
+                </form>
+            </div>
+        </main>
+        <footer id="rodape">
+            <p>Tudo Casa - Seu Imóvel Sem Dor de Cabeça.</p>
+            <p>2023&copy;Ance-Tecnologia.</p>
+        </footer>
+    </div>
+</body>
+
+</html>
